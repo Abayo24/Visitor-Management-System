@@ -1,8 +1,8 @@
-# PHP based-Visitor Management System
+# Visitor Management System - PHP
 
 <p>VMS or Visitor Management System is an utility for the receptionists who have to maintain a bulky and a very-hard-to-maintain record books for all the visitors that visit the company for their various reasons.</p>
 
-<p>VMS has 4 sub- sections, Front Page (Home), Add Visitor (for adding new visitors), View Data (for getting the visitor details - all fields) and a Logged out Visitor page that shows Logged out visitor data for the present day!</p>  
+<p>VMS has 4 sub- sections, Front Page (Home), check in Visitor (for adding new visitors), View Data (for getting the visitor details - all fields) and a Check out Visitor page that shows Logged out visitor data for the present day!</p>  
 
 <h3>DataBase Connects :</h3>
 
@@ -153,4 +153,4 @@ The project uses MySQLi as of now, to integrate the connections use the followin
 Project Development <b>FINISHED SUCCESSFULLY</b>
 
 
-BY ~ Shreya Vaidya
+BY ~ Abayo Akinyi
