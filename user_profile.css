@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+span {
+    text-underline-position: right;
+    font-size: 1.7rem;
+}
+
+.row {
+    width: 40%;
+    border: 2px solid #01345B;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 400px;
+    padding: 20px;
+}
+
+#mybutton{
+    margin-left: 500px;
+    width: 15rem;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #01345B;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+#button1{
+    margin-left: 20px;
+    width: 20px;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #01345B;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+@page {
+
+    size: A4 landscape;
+    float: none;
+    width: auto;
+    border: 0;
+    margin: 0 5%;
+    padding: 0;
+    font-size: 13pt;
+}
+
+@media print {
+
+    /* Print Style */
+    .hide-from-printer {
+        display: none;
+    }
+}
+
