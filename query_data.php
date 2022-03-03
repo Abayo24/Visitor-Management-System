@@ -3,8 +3,6 @@ include("db_connect_db_new.php");
 if ($_SESSION["loggedIn"] == 0)
 	header("location: index.php");
 $user2 = $_SESSION["user"];
-
-
 ?>
 <html>
 
@@ -26,15 +24,11 @@ $user2 = $_SESSION["user"];
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Main Style -->
 	<link rel="stylesheet" href="query_data.css">
-	<title>Checked Out</title>
-
-
-
+	<title>View data</title>
 </head>
 
 <body>
-
-
+	<!--------SideNav------------>
 	<div class="row">
 		<div class="col-sm-3">
 			<div class="app" style="display: flex; height: 100%; position: absolute;">
@@ -78,7 +72,7 @@ $user2 = $_SESSION["user"];
 		<div id='body'>
 			<div class="search" style=" margin-bottom: 40px;">
 				<h2>Search By </h2>
-				
+
 				<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" style="padding:10px 10px;margin-left:300px;width:80%;">
 
 					<div class="FormLabel">
@@ -152,8 +146,7 @@ $user2 = $_SESSION["user"];
 
 
 
-				/*-------------------------DISPALYING SELECTED DATA--------------------------------------------------*/
-				 else if (isset($_POST["search"]) && $_POST["search"] == "dates") {
+				/*-------------------------DISPALYING SELECTED DATA--------------------------------------------------*/ else if (isset($_POST["search"]) && $_POST["search"] == "dates") {
 
 					if (empty($_POST["dateP"]) || empty($_POST["dateF"]))
 						echo "<br><br><span style = 'color : red;margin-left:400px;'>Select a valid option</p>";
@@ -247,22 +240,22 @@ $user2 = $_SESSION["user"];
 		</div>
 	</div>
 	<script>
-					function undisable() {
-						document.getElementById("dateF").disabled = false;
-						document.getElementById("dateP").disabled = false;
-					}
+		function undisable() {
+			document.getElementById("dateF").disabled = false;
+			document.getElementById("dateP").disabled = false;
+		}
 
-					function disable() {
-						document.getElementById("dateF").disabled = true;
-						document.getElementById("dateP").disabled = true;
-					}
-				</script>
+		function disable() {
+			document.getElementById("dateF").disabled = true;
+			document.getElementById("dateP").disabled = true;
+		}
+	</script>
 	<script type="text/javascript">
-				var dateInput = document.getElementById('in1');
-				var dateInput2 = document.getElementById('in2');
+		var dateInput = document.getElementById('in1');
+		var dateInput2 = document.getElementById('in2');
 
-				if (dateInput.value != "" || dateInput2.value != "")
-					document.getElementById('inputdate').removeAttribute("class");
+		if (dateInput.value != "" || dateInput2.value != "")
+			document.getElementById('inputdate').removeAttribute("class");
 	</script>
 	<script type="text/javascript">
 		function onDateInput() {
