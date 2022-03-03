@@ -1,5 +1,6 @@
 <?php
 include('visitor_out.php');
+include('footerForAll.php');
 $userM = $_SESSION['user'];
 if ($_SESSION["loggedIn"] == 0)
   header("location: index.php");
@@ -15,7 +16,7 @@ if ($_SESSION["loggedIn"] == 0)
   <!--Descriptions-->
   <meta name="description" content="I am a great developer for web development" />
   <!--Keywords-->
-  <meta name="keywords" content="Webdev, programmer, Freelancer, coder, Startup" />
+  <meta name="keywords" content="Visitor, Management, Freelancer, System" />
   <!--bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap@1.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap@1.0.0/css/cdb.min.css" />
@@ -29,7 +30,7 @@ if ($_SESSION["loggedIn"] == 0)
 </head>
 
 <body>
-  <!--  Sidebar Section-->
+	<!-------------------------------SideNav------------------------------------------------------->
   <div>
     <div class="row">
       <div class="col-sm-3">
@@ -69,40 +70,50 @@ if ($_SESSION["loggedIn"] == 0)
         </div>
       </div>
     </div>
-    <div class="col-sm-6" style="margin-left: 400px;">
-          <p>
-          <h3 style="margin-top: 60px; margin-left:40px; color: #01345B; font-weight: 800;">These visitors were Logged out Today!</h3>
-          </p><br>
+
+    	<!-------------------------------Table------------------------------------------------------->
+    <div class="col-sm-6" style="margin-left: 300px;">
           <div style="padding-left: 25px">
             <?php
             include('db_connect_db_new.php');
             $date = date("Y/m/d");
             $query = "SELECT * FROM info_visitor WHERE Date = '$date' AND Status = 'OFFLINE'";
             $res = mysqli_query($link, $query);
+            $count = mysqli_num_rows($res);
 
-            echo '<table class="table table-hover">
-                    <tr>
-                      <th>Receipt ID </th>
-                      <th>Name </th>
-                      <th>Contact</th>
-                      <th>Time In</th>
-                      <th>Date</th>
-                    <th>Meeting</th>
-                  </tr>';
-            while ($result = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
-                echo '<tr>
-                  <td>'.$result['ReceiptID'].'</td>
-                  <td>'.$result['Name'].'</td>
-                  <td>'.$result['Contact'].'</td>
-                  <td>'.$result['TimeIN'].'</td>
-                  <td>'.$result['Date'].'</td>
-                  <td>'.$result['meetingTo'].'</td>
-                  </tr>';
-            }                          
-                 echo '</table>';
+					if ($count) {
+						echo "<br><h3 style = 'color: #01345B; font-weight: 700; margin-left:100px;'>These Visitors Checked Out Today! </h3><br/>";
+						headingMake($res);
+					} else {
+						echo "<br><span style = 'color : red;'>No Entries to Display</span>";
+					}
+
+          function headingMake($res)
+          {
+              echo '<table class="table table-hover ">
+                        <tr style="color: #01345B; font-weight: 700">
+                          <th>Receipt ID </th>
+                          <th>Name </th>
+                          <th>Contact</th>
+                          <th>Time In</th>
+                          <th>Date</th>
+                        <th>Meeting</th>
+                      </tr>';
+              while ($result = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+                  echo '<tr>
+            <td>' . $result['ReceiptID'] . '</td>
+            <td>' . $result['Name'] . '</td>
+            <td>' . $result['Contact'] . '</td>
+            <td>' . $result['TimeIN'] . '</td>
+            <td>' . $result['Date'] . '</td>
+            <td>' . $result['meetingTo'] . '</td>
+            </tr>';
+              }
+          }
                   ?>
           </div>
     </div>
+    	<!-------------------------------Scripts------------------------------------------------------>
         <script>
           const sidebar = document.querySelector('.sidebar');
           new CDB.Sidebar(sidebar);

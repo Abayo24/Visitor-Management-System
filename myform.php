@@ -134,7 +134,7 @@ $user_ = $_SESSION["user"];
         <div class="row">
         
           <div class="col-sm-5" style="margin-left:500px">
-            <h3 style="margin-top: 40px;color: #01345B; font-weight: 800;">Check In Visitor</h3>
+            <h3 style="margin-top: 20px;color: #01345B; font-weight: 700">Check In Visitor</h3>
             <form class="myForm" style=" padding-left:90px" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" id="form">
               <? echo $displayError; ?>
               <div class="form-group">

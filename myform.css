@@ -13,10 +13,12 @@
 
 h3 {
     color: #01345B;
-    font-size: 2rem;
+    font-size: 16px;
     margin-bottom: 20px;
-    display: block;
 
+}
+label{
+    color: #01345B;
 }
 
 .myForm {

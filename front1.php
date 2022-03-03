@@ -87,13 +87,13 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                 </div>
                 <div class="col-sm-3">
                     <div>
-                        <h3 style="margin-top: 60px; margin-left:40px; color: #01345B; font-weight: 800;">Checkout Visitors</h3>
+                        <h3 style="margin-top: 20px; margin-left:40px; color: #01345B; font-weight: 700;">Checkout Visitors</h3>
                     </div>
                     <div class="form">
                         <form method="POST" action="">
                             <div class="form-group">
-                                <label class="control-label" id="t" for="recept_id" style="font-size: medium; font-weight:500;">Receipt ID :</label>
-                                <input class="form-control" name="rid" type="number" placeholder="Enter Receipt ID." required />
+                                <label class="control-label" id="t" for="recept_id" style="font-size: medium;color: #01345B; font-weight:500;">Receipt ID :</label>
+                                <input class="form-control" name="rid" type="text" placeholder="Enter Receipt ID." required />
                             </div>
                             <?php { ?>
                                 <input id="x" name="logout" value="Checkout" type="submit" onclick='return confirm("Are you sure you want to Checkout?")'>
@@ -111,7 +111,7 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <h3 style="margin-top: 60px; margin-left:80px; color: #01345B; font-weight: 800;">Details</h3>
+                    <h3 style="margin-top: 20px; margin-left:80px; color: #01345B; font-weight: 700;">Details</h3>
                     <div class="details">
                         <?php
                         $showResultFor = 0;
@@ -119,8 +119,8 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                         if (isset($_GET['rid'])) {
                             $showResultFor = $_GET['rid'];
                         }
-                        $query = "SELECT * FROM info_visitor WHERE ReceiptID = '$showResultFor' AND Status = 'ONLINE' ";
 
+                        $query = "SELECT * FROM info_visitor WHERE ReceiptID = '$showResultFor' AND Status = 'ONLINE' ";
                         $getresult = mysqli_query($link, $query);
                         $resultDetails = mysqli_fetch_array($getresult, MYSQLI_ASSOC);
                         if ($resultDetails) { ?>
@@ -148,7 +148,7 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
             </div>
             <div class="row" style="margin-left:340px;">
                 <div class="col-sm-5">
-                    <h3 style="margin-top: 60px; margin-left:40px; color: #01345B; font-weight: 800;">Recent Visitors :&nbsp;<?php echo $onlineVsitor; ?></h3>
+                    <h3 style="margin-top: 20px; margin-left:40px; color: #01345B; font-weight: 700;">Recent Visitors :&nbsp;<?php echo $onlineVsitor; ?></h3>
                     <table class="table table-striped table-hover" id="table" style="width:80%;padding-top:20px;">
                         <script>
                             $(document).ready(function() {

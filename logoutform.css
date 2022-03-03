@@ -9,6 +9,11 @@ body {
   max-width: 100%;
   font-family: 'Poppins', sans-serif;
 }
+
+table th{
+  color: #01345B;
+   font-weight: 700
+}
 #sidebar {
   margin-left: 0;
   padding-left: 0;

@@ -2,16 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="footer.css"> 
 
-
 	<div class = "footer">
-		
-	<span > 2016 © Graphic Era University 
+	<span > 2022 © Abayo Akinyi 
 	</span>
-
-
 	</div>
-
-
-
 
 <?php }?>
