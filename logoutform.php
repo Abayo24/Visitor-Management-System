@@ -25,7 +25,7 @@ if ($_SESSION["loggedIn"] == 0)
   <!-- font-awesome icon -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--Main Style -->
-  <link rel="stylesheet" href="logoutform.css">
+  <link rel="stylesheet" href="assets/css/logoutform.css">
   <title>Checked Out</title>
 </head>
 

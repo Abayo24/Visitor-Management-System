@@ -66,7 +66,7 @@ error_reporting(0);
         </div>
       </div>
       <div class="text-center">
-        <a href="index.php" class="btn-get-started scrollto">Check In</a>
+        <a href="checkin.php" class="btn-get-started scrollto">Check In</a>
       </div>
 
       

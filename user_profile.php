@@ -12,7 +12,7 @@ $result = mysqli_fetch_array($re, MYSQLI_ASSOC);
 <head>
   <meta content="text/html; charset=windows-1252" http-equiv="content-type">
   <link rel="stylesheet" href="BootStrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="user_profile.css">
+  <link rel="stylesheet" href="assets/css/user_profile.css">
 </head>
 
 <body>

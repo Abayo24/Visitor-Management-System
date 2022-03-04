@@ -40,7 +40,7 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Main Style -->
-    <link rel="stylesheet" href="front1.css">
+    <link rel="stylesheet" href="assets/css/front1.php">
     <title>Admin Dashboard</title>
 </head>
 
