@@ -23,6 +23,8 @@ $result = mysqli_fetch_array($re, MYSQLI_ASSOC);
       <br>
       <span id="col-1" name="main">Name :&nbsp;
         <?php echo $result['Name']; ?></span><br>
+        <span id="col-1" name="main">ID/Passport No :&nbsp;
+        <?php echo $result['idno']; ?></span><br>
       <span id="col-1">Contact No :&nbsp;
         <?php echo $result['Contact'] ?><br>
         <span id="col-1">Purpose :&nbsp;

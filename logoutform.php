@@ -96,6 +96,7 @@ if ($_SESSION["loggedIn"] == 0)
               echo '<table class="table table-hover ">
                         <tr style="color: #01345B; font-weight: 700">
                           <th>Receipt ID </th>
+                          <th>ID/Passport No </th>
                           <th>Name </th>
                           <th>Contact</th>
                           <th>Time In</th>
@@ -105,6 +106,7 @@ if ($_SESSION["loggedIn"] == 0)
               while ($result = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
                   echo '<tr>
             <td>' . $result['ReceiptID'] . '</td>
+            <td>' . $result['idno'] . '</td>
             <td>' . $result['Name'] . '</td>
             <td>' . $result['Contact'] . '</td>
             <td>' . $result['TimeIN'] . '</td>

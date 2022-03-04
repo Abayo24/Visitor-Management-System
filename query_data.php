@@ -191,7 +191,7 @@ $user2 = $_SESSION["user"];
 			function echoDetails($row)
 			{
 				if ($row["TimeOUT"] == NULL) $row["TimeOUT"] = "Not Yet Logged out";
-				echo "<tr><td>" . $row['Name'] . "</td><td>"
+				echo "<tr><td>" . $row['idno'] . "</td><td>" . $row['Name'] . "</td><td>"
 					. $row['Contact'] . "</td><td>"
 					. $row["Purpose"] . "</td><td>"
 					. $row["Date"] . "</td><td>"
@@ -206,6 +206,7 @@ $user2 = $_SESSION["user"];
 				echo '<table class="table table-hover " style="margin-left:300px">
                     <tr>
                       <th>Receipt ID </th>
+					  <th>ID/Passport No </th>
                       <th>Name </th>
                       <th>Contact</th>
                       <th>Time In</th>
@@ -216,6 +217,7 @@ $user2 = $_SESSION["user"];
 
 					echo '<tr>
 				<td>' . $result['ReceiptID'] . '</td>
+				<td>' . $result['idno'] . '</td>
 				<td>' . $result['Name'] . '</td>
 				<td>' . $result['Contact'] . '</td>
 				<td>' . $result['TimeIN'] . '</td>

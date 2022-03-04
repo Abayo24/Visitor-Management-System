@@ -130,10 +130,16 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                                 <div class="col-sm-8" style="padding-left:5px;padding-top:5px; font-size:14px;">
                                     <p style="width: 678px;" id="col-1">Date :<?php echo $resultDetails['Date']; ?>&nbsp;&nbsp;
                                         Time in :&nbsp;<?php echo $resultDetails['TimeIN']; ?></p>
-                                    <span id="col-1" name="main">Name :&nbsp;
+
+                                        <span id="col-1">ID/Passport No :&nbsp;
+                                        <?php echo $resultDetails['idno']; ?></span><br>
+
+                                        <span id="col-1" name="main">Name :&nbsp;
                                         <?php echo $resultDetails['Name']; ?></span><br>
-                                    <span id="col-1">Contact No :&nbsp;
-                                        <?php echo $resultDetails['Contact'] ?><br>
+                                        
+                                        <span id="col-1">Contact No :&nbsp;
+                                        <?php echo $resultDetails['Contact']; ?></span><br>
+
                                         <span id="col-1">Purpose :&nbsp;
                                             <?php echo $resultDetails['Purpose']; ?></span><br>
                                         <span id="col-1">Meeting :&nbsp;
@@ -167,9 +173,10 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                                         <td  style="height :30px;padding-top:3px;">            
                                         <a style = "font-size:15px;  text-decoration: none;"  href="front1.php?rid=' . $result2['ReceiptID'] . '" data-html="true"  
                                         title="<b>' . $result2['Name'] . '<b>"
-                                         data-toggle="popover" 
+                                        data-toggle="popover" 
                                          data-trigger="hover"
-                                        data-content="Contact : ' . $result2['Contact'] . ' 
+                                        data-content="idno : ' . $result2['idno'] . '
+                                        <br>Contact : ' . $result2['Contact'] . ' 
                                         <br>Time in : ' . $result2['TimeIN'] . ' 
                                         <br>Purpose : ' . $result2['Purpose'] . '           
                                         <br> R ID : ' . $result2['ReceiptID'] . '">' . $result2['Name'] . '</a>         
