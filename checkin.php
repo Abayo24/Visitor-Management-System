@@ -1,10 +1,7 @@
 <?php
 include('db_connect_db_new.php');
 session_start();
-if ($_SESSION["loggedIn"] == 0)
-  header("location: index.php");
-$user_ = $_SESSION["user"];
-
+error_reporting(0);
 ?>
 <html>
 
@@ -67,8 +64,6 @@ $user_ = $_SESSION["user"];
     $meet = $_POST["MeetingTo"];
 
 
-
-
     if (empty($name) || empty($cno) || empty($p) || strlen($cno) != 10)
       $displayError = "You have not entered the details correctly !";
     else {
@@ -93,7 +88,7 @@ $user_ = $_SESSION["user"];
     <div>
       <div class="row">
         <div class="col-sm-3">
-          <div class="app" style="display: flex; height: 100%; position: absolute">
+          <div class="app" style="display: flex; height: 100%; position: fixed">
             <div class="sidebar text-white" id="sidebar-showcase" role="cdb-sidebar">
               <div class="sidebar-container" style="background-color: #01345B;">
                 <div class="sidebar-header text-center">
@@ -102,25 +97,9 @@ $user_ = $_SESSION["user"];
                 </div>
                 <div class="sidebar-nav">
                   <div class="sidenav">
-                    <a class="sidebar-item" href="front1.php">
-                      <i class="fa fa-th-large sidebar-icon"></i>
-                      <span>Admin Dashboard</span>
-                    </a>
-                    <a class="sidebar-item" href="myform.php">
-                      <i class="fa fa-plus sidebar-icon"></i>
-                      <span>Check In Visitor</span>
-                    </a>
-                    <a class="sidebar-item" href="logoutform.php">
-                      <i class="fa fa-minus-circle sidebar-icon"></i>
-                      <span>Checked Out Visitors</span>
-                    </a>
-                    <a class="sidebar-item" href="query_data.php">
-                      <i class="fa fa-eye sidebar-icon"></i>
-                      <span>View Data</span>
-                    </a>
-                    <a class="sidebar-item" href="logout.php">
-                      <i class="fa fa-sign-out sidebar-icon"></i>
-                      <span>Logout</span>
+                    <a class="sidebar-item" href="home.php">
+                      <i class="fa fa-home sidebar-icon"></i>
+                      <span>Back Home</span>
                     </a>
                   </div>
                 </div>
@@ -129,12 +108,10 @@ $user_ = $_SESSION["user"];
           </div>
         </div>
 
-
-
         <div class="row">
         
           <div class="col-sm-5" style="margin-left:500px">
-            <h3 style="margin-top: 20px;color: #01345B; font-weight: 700">Check In Visitor</h3>
+            <h3 style="margin-top: 20px;color: #01345B; font-weight: 700;">Check In </h3>
             <form class="myForm" style=" padding-left:90px" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" id="form">
               <? echo $displayError; ?>
               <div class="form-group">
@@ -201,7 +178,6 @@ $user_ = $_SESSION["user"];
   <script src="BootStrap/js/bootstrap.min.js"></script>
   <script src="BootStrap/js/jQuery.min.js"></script>
   <script src="BootStrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="webcam/webmaster/webcam.js"></script>
   </div>
 
 </body>

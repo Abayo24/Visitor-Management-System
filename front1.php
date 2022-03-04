@@ -40,17 +40,15 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Main Style -->
-    <link rel="stylesheet" href="assets/css/front1.php">
+    <link rel="stylesheet" href="assets/css/front1.css">
     <title>Admin Dashboard</title>
 </head>
 
 <body>
     <!--  Sidebar Section-->
-  
-        <div>
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="app" style="display: flex; height: 100%; position: absolute">
+                    <div class="app" style="display: flex; height: 100%; position: fixed">
                         <div class="sidebar text-white" id="sidebar-showcase" role="cdb-sidebar">
                             <div class="sidebar-container"  style="background-color: #01345B;">
                                 <div class="sidebar-header text-center">
@@ -74,6 +72,10 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                                         <a class="sidebar-item" href="query_data.php">
                                             <i class="fa fa-eye sidebar-icon"></i>
                                             <span>View Data</span>
+                                        </a>
+                                        <a class="sidebar-item" href="home.php">
+                                            <i class="fa fa-home sidebar-icon"></i>
+                                            <span>Back Home</span>
                                         </a>
                                         <a class="sidebar-item" href="logout.php">
                                             <i class="fa fa-sign-out sidebar-icon"></i>
@@ -178,7 +180,6 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                 </div>
             </div>
 
-        </div>
 
         </div>
         </div>

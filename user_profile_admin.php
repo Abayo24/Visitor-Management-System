@@ -39,7 +39,7 @@ $result = mysqli_fetch_array($re, MYSQLI_ASSOC);
   <br>
   <br>
   <div> <button type="button" id="mybutton" class="hide-from-printer" onclick="window.print()" value="Print Badge">Print Badge</button>
-    <a type="button" id="button1" class="hide-from-printer" href="checkin.php">Back </a>
+    <a type="button" id="button1" class="hide-from-printer" href="myform.php">Back </a>
   </div>
 </body>
 

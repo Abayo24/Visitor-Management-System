@@ -57,7 +57,7 @@ function lr($lrsrt){
 <body>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
-			<p class="login-text" style="font-weight: 800; font-size: 3rem;">Login</p>
+			<h3 class="login-text" style="font-weight: 700;">Login</h3>
 			<div class="input-group">
 				<input type="username" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
 			</div>

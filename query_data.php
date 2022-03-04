@@ -31,7 +31,7 @@ $user2 = $_SESSION["user"];
 	<!-------------------------------SideNav------------------------------------------------------->
 	<div class="row">
 		<div class="col-sm-3">
-			<div class="app" style="display: flex; height: 100%; position: absolute;">
+			<div class="app" style="display: flex; height: 100%; position: fixed;">
 				<div class="sidebar text-white" id="sidebar-showcase" role="cdb-sidebar">
 					<div class="sidebar-container" style="background-color: #01345B;">
 						<div class="sidebar-header text-center">
@@ -56,6 +56,10 @@ $user2 = $_SESSION["user"];
 									<i class="fa fa-eye sidebar-icon"></i>
 									<span>View Data</span>
 								</a>
+								<a class="sidebar-item" href="home.php">
+                                    <i class="fa fa-home sidebar-icon"></i>
+                                    <span>Back Home</span>
+                                </a>
 								<a class="sidebar-item" href="logout.php">
 									<i class="fa fa-sign-out sidebar-icon"></i>
 									<span>Logout</span>
@@ -72,7 +76,7 @@ $user2 = $_SESSION["user"];
 		<!-----------------------Query Form----------------------------------------------->
 		<div id='body'>
 			<div class="search" style=" margin-bottom: 10px;">
-				<h2 style="margin-left: 400px;margin-top: 20px;margin-bottom: 20px;color: #01345B; font-weight: 700">Search By </h2>
+				<h3 style="margin-left: 400px;margin-top: 20px;margin-bottom: 20px;color: #01345B; font-weight: 700">Search By </h3>
 
 				<form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" style="padding:20px;margin-left:300px;width:62%;">
 

@@ -86,14 +86,13 @@ $user_ = $_SESSION["user"];
 
     //echo "<h4>You will be redirected to the home page after 10 secs !</h4> ";
     if ($success == 1)
-      header('location: user_profile.php');
+      header('location: user_profile_admin.php');
   }
   ?>
   <!--  Sidebar Section-->
-    <div>
       <div class="row">
         <div class="col-sm-3">
-          <div class="app" style="display: flex; height: 100%; position: absolute">
+          <div class="app" style="display: flex; height: 100%; position: fixed">
             <div class="sidebar text-white" id="sidebar-showcase" role="cdb-sidebar">
               <div class="sidebar-container" style="background-color: #01345B;">
                 <div class="sidebar-header text-center">
@@ -117,6 +116,10 @@ $user_ = $_SESSION["user"];
                     <a class="sidebar-item" href="query_data.php">
                       <i class="fa fa-eye sidebar-icon"></i>
                       <span>View Data</span>
+                    </a>
+                    <a class="sidebar-item" href="home.php">
+                      <i class="fa fa-home sidebar-icon"></i>
+                      <span>Back Home</span>
                     </a>
                     <a class="sidebar-item" href="logout.php">
                       <i class="fa fa-sign-out sidebar-icon"></i>
