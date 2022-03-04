@@ -89,7 +89,7 @@ $user_ = $_SESSION["user"];
         echo "Error: " . $sql . "<br>" . mysqli_error($link);
     }
 
-    //echo "<h4>You will be redirected to the home page after 10 secs !</h4> ";
+  
     if ($success == 1)
       header('location: user_profile_admin.php');
   }

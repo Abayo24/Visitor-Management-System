@@ -10,9 +10,9 @@ if ($_SESSION["loggedIn"] == 0)
 $tody = date("Y:m:d");
 $sql = "SELECT Name FROM info_visitor WHERE Date = '$tody'";
 
-$sqlOnline = "SELECT * FROM info_visitor WHERE Status = 'ONLINE' LIMIT 10";
+$sqlOnline = "SELECT * FROM info_visitor WHERE Status = 'ONLINE'";
 
-$sqlRecent = "SELECT * FROM (SELECT * FROM info_visitor ORDER BY Serial DESC LIMIT 10) a ORDER BY Serial DESC";
+$sqlRecent = "SELECT * FROM (SELECT * FROM info_visitor ORDER BY Serial DESC) a ORDER BY Serial DESC";
 
 $resultToday = mysqli_num_rows(mysqli_query($link, $sql));   //recent Visitors
 $resultS = mysqli_query($link, $sqlOnline);       //Online Visitors
