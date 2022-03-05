@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   display: inline-block;
     width: 15%;
-    margin-top: 40px;
+    margin-top: 70px;
     padding: 10px 20px;
     text-align: center;
     border: none;
@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -350,7 +350,8 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 0px;
 }
 .section-title h2 {
   font-size: 32px;
@@ -369,31 +370,8 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-.about .content ul li {
-  padding-left: 28px;
-  position: relative;
-}
-.about .content ul li + li {
-  margin-top: 10px;
-}
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #01345B;
-  line-height: 1;
-}
 .about .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .about .content .btn-learn-more {
     font-family: "Poppins", sans-serif;
@@ -597,7 +575,7 @@ section {
 }
 .contact .info i {
   font-size: 20px;
-  color: #2487ce;
+  color: #124265;
   float: left;
   width: 44px;
   height: 44px;
@@ -625,7 +603,7 @@ section {
   margin-top: 40px;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #2487ce;
+  background: #124265;
   color: #fff;
 }
 .contact .php-email-form {
@@ -688,15 +666,24 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #01345B;
-  border: 0;
-  padding: 10px 30px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+    width: 25%;
+    margin-top: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    background: #01345B;
+    outline: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #3194db;
+  transform: translateY(-5px);
+  background: #002a4b;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -725,11 +712,6 @@ section {
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #444444;
-}
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;

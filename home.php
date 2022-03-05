@@ -105,7 +105,7 @@ error_reporting(0);
         <div class="row icon-boxes">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="ri-stack-line"></i></div>
+              <div class="icon"><i class="ri-login-circle-line"></i></div>
               <h4 class="title"><a href="">Login/Logout</a></h4>
               <p class="description">These operations can only be accessed by the Admin. </p>
             </div>
@@ -113,7 +113,7 @@ error_reporting(0);
   
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="ri-palette-line"></i></div>
+              <div class="icon"><i class="ri-install-line"></i></div>
               <h4 class="title"><a href="">Check In</a></h4>
               <p class="description">This operation can be done by the Admin and Visitor.</p>
             </div>
@@ -121,7 +121,7 @@ error_reporting(0);
   
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="ri-command-line"></i></div>
+              <div class="icon"><i class="ri-uninstall-line"></i></div>
               <h4 class="title"><a href="">Check Out</a></h4>
               <p class="description">This operation can only be done by the Admin.</p>
             </div>
@@ -129,7 +129,7 @@ error_reporting(0);
   
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
             <div class="icon-box">
-              <div class="icon"><i class="ri-fingerprint-line"></i></div>
+              <div class="icon"><i class="ri-database-2-line"></i></div>
               <h4 class="title"><a href="">Data Query</a></h4>
               <p class="description">This operation can only be done by the Admin.</p>
             </div>
@@ -142,7 +142,8 @@ error_reporting(0);
 
       
     </div>
-  </section><!-- End Features -->
+  </section>
+  <!-- End Features -->
 
    <!-- ======= Counts Section ======= -->
    <section id="counts" class="counts section-bg">
@@ -354,12 +355,11 @@ error_reporting(0);
     <!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" style="margin-bottom: 5px;">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Contact</h2>
         </div>
-
         <div class="row mt-5">
           <div class="col-lg-4">
             <div class="info">
@@ -389,7 +389,7 @@ error_reporting(0);
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-3">
+                <div class="col-md-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
@@ -401,7 +401,7 @@ error_reporting(0);
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
+                <div class="error-message">There is an error in sending the message</div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
