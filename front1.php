@@ -10,13 +10,13 @@ if ($_SESSION["loggedIn"] == 0)
 $tody = date("Y:m:d");
 $sql = "SELECT Name FROM info_visitor WHERE Date = '$tody'";
 
-$sqlOnline = "SELECT * FROM info_visitor WHERE Status = 'ONLINE'";
+$sqlOnline = "SELECT * FROM info_visitor WHERE Status = 'ONLINE' LIMIT 7";
 
-$sqlRecent = "SELECT * FROM (SELECT * FROM info_visitor ORDER BY Serial DESC) a ORDER BY Serial DESC";
+$sqlRecent = "SELECT * FROM (SELECT * FROM info_visitor ORDER BY Serial DESC LIMIT 7 )";
 
 $resultToday = mysqli_num_rows(mysqli_query($link, $sql));   //recent Visitors
 $resultS = mysqli_query($link, $sqlOnline);       //Online Visitors
-$onlineVsitor = mysqli_num_rows($resultS);
+$onlineVisitor = mysqli_num_rows($resultS);
 $sqlResRecent = mysqli_query($link, $sqlRecent);
 ?>
 
@@ -87,6 +87,9 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                         </div>
                     </div>
                 </div>
+                <!--------------End Sidebar---------------->
+
+                <!--------------Start Checked Out Visitors---------------->
                 <div class="col-sm-3">
                     <div>
                         <h3 style="margin-top: 20px; margin-left:40px; color: #01345B; font-weight: 700;">Checkout Visitors</h3>
@@ -112,6 +115,10 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                         </form><br>
                     </div>
                 </div>
+
+                <!--------------End Checked Out Visitors---------------->
+
+                <!--------------Start Details---------------->
                 <div class="col-sm-6">
                     <h3 style="margin-top: 20px; margin-left:80px; color: #01345B; font-weight: 700;">Details</h3>
                     <div class="details">
@@ -153,10 +160,13 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
 
                     </div>
                 </div>
+                <!--------------End Details---------------->
             </div>
+
+            <!--------------Start Recent Visitors---------------->
             <div class="row" style="margin-left:340px;">
                 <div class="col-sm-5">
-                    <h3 style="margin-top: 20px; margin-left:40px; color: #01345B; font-weight: 700;">Recent Visitors :&nbsp;<?php echo $onlineVsitor; ?></h3>
+                    <h3 style="margin-top: 20px; margin-left:40px; color: #01345B; font-weight: 700;">Recent Visitors :&nbsp;<?php echo $onlineVisitor; ?></h3>
                     <table class="table table-striped table-hover" id="table" style="width:80%;padding-top:20px;">
                         <script>
                             $(document).ready(function() {
@@ -186,8 +196,7 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                     </ul>
                 </div>
             </div>
-
-
+            <!--------------End Recent Visitors---------------->
         </div>
         </div>
     <script>

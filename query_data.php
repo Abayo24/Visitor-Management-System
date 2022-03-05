@@ -210,6 +210,7 @@ $user2 = $_SESSION["user"];
                       <th>Name </th>
                       <th>Contact</th>
                       <th>Time In</th>
+					  <th>Time Out</th>
                       <th>Date</th>
                     <th>Meeting</th>
                   </tr>';
@@ -221,6 +222,7 @@ $user2 = $_SESSION["user"];
 				<td>' . $result['Name'] . '</td>
 				<td>' . $result['Contact'] . '</td>
 				<td>' . $result['TimeIN'] . '</td>
+				<td>' . $result['TimeOUT'] . '</td>
 				<td>' . $result['Date'] . '</td>
 				<td>' . $result['meetingTo'] . '</td>
 				</tr>';

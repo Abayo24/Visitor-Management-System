@@ -355,12 +355,12 @@ error_reporting(0);
     <!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact" style="margin-bottom: 5px;">
+    <section id="contact" class="contact" >
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Contact</h2>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5"style="padding-top: 0;">
           <div class="col-lg-4">
             <div class="info">
               <div class="address">

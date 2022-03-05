@@ -57,6 +57,11 @@ body {
   transition: .3s;
 }
 
+#x:hover{
+  transform: translateY(-5px);
+    background: #002a4b;
+}
+
 #sidebar {
   margin-left: 0;
   padding-left: 0;
@@ -70,6 +75,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .3);
   height: 30%;
+  
 }
 
 

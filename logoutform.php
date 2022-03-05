@@ -75,7 +75,7 @@ if ($_SESSION["loggedIn"] == 0)
     </div>
 
     	<!-------------------------------Table------------------------------------------------------->
-    <div class="col-sm-6" style="margin-left: 300px;">
+    <div class="col-sm-9" style="margin-left: 300px;">
           <div style="padding-left: 25px">
             <?php
             include('db_connect_db_new.php');
@@ -100,6 +100,7 @@ if ($_SESSION["loggedIn"] == 0)
                           <th>Name </th>
                           <th>Contact</th>
                           <th>Time In</th>
+                          <th>Time Out</th>
                           <th>Date</th>
                         <th>Meeting</th>
                       </tr>';
@@ -110,6 +111,7 @@ if ($_SESSION["loggedIn"] == 0)
             <td>' . $result['Name'] . '</td>
             <td>' . $result['Contact'] . '</td>
             <td>' . $result['TimeIN'] . '</td>
+            <td>' . $result['TimeOUT'] . '</td>
             <td>' . $result['Date'] . '</td>
             <td>' . $result['meetingTo'] . '</td>
             </tr>';

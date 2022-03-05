@@ -42,12 +42,12 @@ $user_ = $_SESSION["user"];
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($_POST["idno"]))
-      $idno_error = "Enter the ID/Passport Properly !";
+      $idno_error = "Enter the ID/Passport !";
     else
       $idno = $_POST["idno"];
 
     if (empty($_POST["name"]))
-      $name_error = "Enter the Name Properly !";
+      $name_error = "Enter the Name  !";
     else
       $name = $_POST["name"];
 
@@ -60,7 +60,7 @@ $user_ = $_SESSION["user"];
       $p_error = "Enter Valid Purpose";
     else
       $p = $_POST["purpose"];
-    date_default_timezone_set("Asia/Kathmandu");
+    date_default_timezone_set("Africa/Nairobi");
     $timein = date("H:i:s");
     $rid = rand(100000, 900000);
     $_SESSION["rid"] = $rid;
@@ -139,7 +139,7 @@ $user_ = $_SESSION["user"];
         </div>
         <div class="row">
         
-          <div class="col-sm-4" style="margin-left:500px">
+          <div class="col-sm-5" style="margin-left:500px">
             <h3 style="margin-top: 20px;color: #01345B; font-weight: 700">Check In Visitor</h3>
             <form class="myForm" style=" padding-left:90px" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" id="form">
               <? echo $displayError; ?>
