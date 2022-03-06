@@ -106,7 +106,7 @@ error_reporting(0);
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="ri-login-circle-line"></i></div>
-              <h4 class="title"><a href="">Login/Logout</a></h4>
+              <h4 class="title"><a href="">Login</a></h4>
               <p class="description">These operations can only be accessed by the Admin. </p>
             </div>
           </div>
