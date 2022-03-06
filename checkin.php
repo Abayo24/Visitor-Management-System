@@ -57,7 +57,7 @@ error_reporting(0);
       $p_error = "Enter Valid Purpose";
     else
       $p = $_POST["purpose"];
-    date_default_timezone_set("Asia/Kathmandu");
+    date_default_timezone_set("Africa/Nairobi");
     $timein = date("H:i:s");
     $rid = rand(100000, 900000);
     $_SESSION["rid"] = $rid;

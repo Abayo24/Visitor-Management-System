@@ -10,16 +10,12 @@ $_SESSION["loggedIn"] =0;
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	
-	if(empty($_POST["username"]) || empty($_POST["pass"])){
-		$error = "Please Enter All the Fields !";}
 	
-	
-	else{
-		$pass = $_POST["pass"];
+		$pass = md5($_POST["pass"]);
 		$uname =$_POST["username"];
 	
 	
-	$sql = "SELECT userName FROM login_info WHERE userName = 'Sheldon' AND pass= 'bang' ";
+	$sql = "SELECT userName FROM login_info WHERE userName = '$uname' AND pass= '$pass' ";
 	$match = mysqli_query($link, $sql);
 	$count = mysqli_num_rows($match);
 	
@@ -28,11 +24,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$_SESSION["loggedIn"] = 1;
 		header("Location: front1.php", true, 301);
 	}
-	
-		else
-		$error = "Invalid Password or Username";
+		else{
+            echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
+        }
 }
-}
+
 
 function lr($lrsrt){
 

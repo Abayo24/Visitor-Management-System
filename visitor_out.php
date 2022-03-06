@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	if (!empty($_POST["rid"]))
 		$rid = $_POST["rid"];
-	date_default_timezone_set("Asia/Kathmandu");
+	date_default_timezone_set("Africa/Nairobi");
 	$time = date("H:i:s");
 	$date = date("d/m/Y");
 	if (empty($rid))
