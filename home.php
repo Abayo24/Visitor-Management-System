@@ -12,19 +12,27 @@ error_reporting(0);
   <title>Visitor Management System</title>
   <meta content="" name="description">
 <<<<<<< HEAD
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   <meta content="" name="keywords" content="visitor, Management, System" />> 
 =======
 =======
 >>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
+=======
+  <meta content="" name="keywords" content="visitor, Management, System" />> 
+=======
+>>>>>>> Stashed changes
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   
   
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 >>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
 =======
+=======
+>>>>>>> Stashed changes
 >>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
 
   <!-- Google Fonts -->
