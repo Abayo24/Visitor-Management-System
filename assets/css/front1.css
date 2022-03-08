@@ -70,9 +70,13 @@ body {
 .sidebar {
   background-color: #01345B;
 }
-.sidebar-nav .sidenav .sidebar-item i{
+.sidebar-nav .sidenav .sidebar-item:hover{
   transform: translateY(-5px);
-  background: #002a4b;
+  background: #2487ce;
+  color: #fff;
+}
+
+.sidebar-nav .sidenav .sidebar-item:active{
   color: #fff;
 }
 
