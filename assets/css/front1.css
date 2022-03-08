@@ -77,7 +77,8 @@ body {
 }
 
 .sidebar-nav .sidenav .sidebar-item:active{
-  color: #2487ce;
+  background: #2487ce;
+  color: #fff;
 }
 
 #table {
