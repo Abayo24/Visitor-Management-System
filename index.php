@@ -63,6 +63,15 @@ function lr($lrsrt){
 			<div class="input-group">
 				<button name="submit" class="btn">Login</button>
 			</div>
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<div class="input-group">
+				<a href="home.php">Back Home</a>
+			</div>
+=======
+>>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
+=======
+>>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
 		</form>
 	</div>
 </body>
