@@ -11,29 +11,13 @@ error_reporting(0);
 
   <title>Visitor Management System</title>
   <meta content="" name="description">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<<<<<<< HEAD
+
   <meta content="" name="keywords" content="visitor, Management, System" />> 
-=======
-=======
->>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
-=======
-  <meta content="" name="keywords" content="visitor, Management, System" />> 
-=======
->>>>>>> Stashed changes
-  <meta content="" name="keywords">
+
 
   <!-- Favicons -->
   
   
-<<<<<<< Updated upstream
-<<<<<<< HEAD
->>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
-=======
-=======
->>>>>>> Stashed changes
->>>>>>> fc60bb92ff92d29d81b0eba14bd2cd1405dff20c
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">

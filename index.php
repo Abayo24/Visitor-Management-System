@@ -63,11 +63,9 @@ function lr($lrsrt){
 			<div class="input-group">
 				<button name="submit" class="btn">Login</button>
 			</div>
-
 			<div class="input-group">
 				<a href="home.php">Back Home</a>
 			</div>
-
 		</form>
 	</div>
 </body>
