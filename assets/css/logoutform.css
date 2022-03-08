@@ -20,6 +20,12 @@ table th{
   
 }
 
+.sidebar-nav .sidenav .sidebar-item:hover{
+  transform: translateY(-5px);
+  background: #2487ce;
+  color: #fff;
+}
+
 .row {
   background-color: #01345B;
 }
