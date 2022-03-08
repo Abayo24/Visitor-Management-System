@@ -25,6 +25,10 @@ table th{
   background: #2487ce;
   color: #fff;
 }
+.sidebar-nav .sidenav .sidebar-item:active{
+  background: #2487ce;
+  color: #fff;
+}
 
 .row {
   background-color: #01345B;

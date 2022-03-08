@@ -39,6 +39,10 @@ td {
     background: #2487ce;
     color: #fff;
   }
+  .sidebar-nav .sidenav .sidebar-item:active{
+    background: #2487ce;
+    color: #fff;
+  }
 
 /*---------Date----------------------*/
 #day_end,

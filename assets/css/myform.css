@@ -57,6 +57,11 @@ label{
     color: #fff;
   }
 
+  .sidebar-nav .sidenav .sidebar-item:active{
+    background: #2487ce;
+    color: #fff;
+  }
+
 #time {
     margin-top: 0;
     margin-left: 290px;
