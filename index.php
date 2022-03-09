@@ -37,13 +37,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 	<div class="container">
-		<form action="" method="POST" class="login-email" data-aos="fade-up">
+		<form action="" method="POST" class="login-email">
 			<h3 class="login-text" style="font-weight: 700;">Login</h3>
 			<div class="input-group">
-				<input autocomplete="off" type="username" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
+				<input class="form-control" autocomplete="off" type="username" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
 			</div>
 			<div class="input-group">
-				<input type="password" placeholder="Password" name="pass" value="<?php echo $_POST['pass']; ?>" required>
+				<input class="form-control" autocomplete="off" type="password" placeholder="Password" name="pass" value="<?php echo $_POST['pass']; ?>" required>
 			</div>
 			<div class="input-group">
 				<button name="submit" class="btn">Login</button>

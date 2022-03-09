@@ -56,9 +56,7 @@ body {
     transition: .3s;
 }
 
-.container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
-    border-color: #01345B;
-}
+
 
 .container .login-email .input-group .btn {
     display: block;
