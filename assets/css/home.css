@@ -351,7 +351,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 20px;
-  padding-top: 0px;
+  padding-top: 20px;
 }
 .section-title h2 {
   font-size: 32px;

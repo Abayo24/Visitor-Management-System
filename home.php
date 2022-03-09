@@ -8,16 +8,9 @@ error_reporting(0);
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Visitor Management System</title>
-  <meta content="" name="description">
-
+  <meta content="" name="description" content="I am a great developer for web development">
   <meta content="" name="keywords" content="visitor, Management, System" />> 
-
-
-  <!-- Favicons -->
-  
-  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -32,7 +25,7 @@ error_reporting(0);
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/home.css" rel="stylesheet">
+  <link  rel="stylesheet" href="assets/css/home.css">
 
 </head>
 
@@ -63,7 +56,7 @@ error_reporting(0);
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
-          <h1>Welcome to Abayo International</h1>
+          <h1 style="font-size: 56px;line-height: 72px;">Welcome to Abayo International</h1>
           <h2>Check In to Get a Badge!</h2>
         </div>
       </div>
