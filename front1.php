@@ -1,5 +1,5 @@
-<?php include('db_connect_db_new.php');
-
+<?php 
+include('db_connect_db_new.php');
 include('visitor_out.php');
 
 $user1 = $_SESSION["user"];
@@ -9,9 +9,7 @@ if ($_SESSION["loggedIn"] == 0)
 
 $tody = date("Y:m:d");
 $sql = "SELECT Name FROM info_visitor WHERE Date = '$tody'";
-
 $sqlOnline = "SELECT * FROM info_visitor WHERE Status = 'ONLINE' LIMIT 7";
-
 $sqlRecent = "SELECT * FROM (SELECT * FROM info_visitor ORDER BY Serial DESC LIMIT 7 )";
 
 $resultToday = mysqli_num_rows(mysqli_query($link, $sql));   //recent Visitors
@@ -35,8 +33,7 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
     <!--bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap@1.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap@1.0.0/css/cdb.min.css" />
-    <script src="BootStrap/js/jQuery.min.js"></script>
-    <script src="BootStrap/js/bootstrap.min.js"></script>
+   
     <!-- font-awesome icon -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Main Style -->
@@ -128,25 +125,20 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                         if (isset($_GET['rid'])) {
                             $showResultFor = $_GET['rid'];
                         }
-
                         $query = "SELECT * FROM info_visitor WHERE ReceiptID = '$showResultFor' AND Status = 'ONLINE' ";
                         $getresult = mysqli_query($link, $query);
                         $resultDetails = mysqli_fetch_array($getresult, MYSQLI_ASSOC);
                         if ($resultDetails) { ?>
                             <div class="row">
-                                <div class="col-sm-8" style="padding-left:5px;padding-top:5px; font-size:14px;">
+                                <div class="col-sm-8" style="padding-left:35px;padding-top:5px; font-size:14px;">
                                     <p style="width: 678px;" id="col-1">Date :<?php echo $resultDetails['Date']; ?>&nbsp;&nbsp;
                                         Time in :&nbsp;<?php echo $resultDetails['TimeIN']; ?></p>
-
                                         <span id="col-1">ID/Passport No :&nbsp;
                                         <?php echo $resultDetails['idno']; ?></span><br>
-
                                         <span id="col-1" name="main">Name :&nbsp;
-                                        <?php echo $resultDetails['Name']; ?></span><br>
-                                        
+                                        <?php echo $resultDetails['Name']; ?></span><br>                                
                                         <span id="col-1">Contact No :&nbsp;
                                         <?php echo $resultDetails['Contact']; ?></span><br>
-
                                         <span id="col-1">Purpose :&nbsp;
                                             <?php echo $resultDetails['Purpose']; ?></span><br>
                                         <span id="col-1">Meeting :&nbsp;
@@ -157,7 +149,6 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                                 </div>
                             </div>
                         <?php } ?>
-
                     </div>
                 </div>
                 <!--------------End Details---------------->
@@ -203,7 +194,8 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
         const sidebar = document.querySelector('.sidebar');
         new CDB.Sidebar(sidebar);
     </script>
-
+    <script src="BootStrap/js/jQuery.min.js"></script>
+    <script src="BootStrap/js/bootstrap.min.js"></script>
     <script src="../build/cdbbootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap@1.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/cdbootstrap@1.0.0/js/popper.min.js"></script>
