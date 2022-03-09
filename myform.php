@@ -71,9 +71,6 @@ $user_ = $_SESSION["user"];
     $year = date("Y");
     $meet = $_POST["MeetingTo"];
 
-
-
-
     if (empty($idno) || empty($name) || empty($cno) || empty($p) || strlen($cno) != 10)
       $displayError = "You have not entered the details correctly !";
     else {
@@ -84,13 +81,13 @@ $user_ = $_SESSION["user"];
 				 '$user_')";
 
       if (mysqli_query($link, $sql))
-        $success = 1;   //redirection to the printing page.
+        $success = 1;   
       else
         echo "Error: " . $sql . "<br>" . mysqli_error($link);
     }
 
   
-    if ($success == 1)
+    if ($success == 1) //redirection to the printing page.
       header('location: user_profile_admin.php');
   }
   ?>
@@ -107,11 +104,11 @@ $user_ = $_SESSION["user"];
                 </div>
                 <div class="sidebar-nav">
                   <div class="sidenav">
-                    <a class="sidebar-item" href="front1.php">
+                    <a class="sidebar-item" href="front1.php" >
                       <i class="fa fa-th-large sidebar-icon"></i>
                       <span>Admin Dashboard</span>
                     </a>
-                    <a class="sidebar-item" href="myform.php">
+                    <a class="sidebar-item" href="myform.php" style="background: #2487ce;color: #fff;">
                       <i class="fa fa-plus sidebar-icon"></i>
                       <span>Check In Visitor</span>
                     </a>
@@ -137,8 +134,7 @@ $user_ = $_SESSION["user"];
             </div>
           </div>
         </div>
-        <div class="row">
-        
+        <div class="row">  
           <div class="col-sm-5" style="margin-left:500px">
             <h3 style="margin-top: 20px;color: #01345B; font-weight: 700">Check In Visitor</h3>
             <form class="myForm" style=" padding-left:90px" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" id="form">
@@ -208,7 +204,6 @@ $user_ = $_SESSION["user"];
   <script src="BootStrap/js/bootstrap.min.js"></script>
   <script src="BootStrap/js/jQuery.min.js"></script>
   <script src="BootStrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="webcam/webmaster/webcam.js"></script>
   </div>
 
 </body>

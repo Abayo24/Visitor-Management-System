@@ -54,7 +54,7 @@ $sqlResRecent = mysqli_query($link, $sqlRecent);
                                 </div>
                                 <div class="sidebar-nav">
                                     <div class="sidenav">
-                                        <a class="sidebar-item" href="front1.php">
+                                        <a class="sidebar-item" href="front1.php" style="background: #2487ce;color: #fff;">
                                             <i class="fa fa-th-large sidebar-icon"></i>
                                             <span>Admin Dashboard</span>
                                         </a>

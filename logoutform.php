@@ -50,7 +50,7 @@ if ($_SESSION["loggedIn"] == 0)
                     <i class="fa fa-plus sidebar-icon"></i>
                     <span>Check In Visitor</span>
                   </a>
-                  <a class="sidebar-item" href="logoutform.php">
+                  <a class="sidebar-item" href="logoutform.php" style="background: #2487ce;color: #fff;">
                     <i class="fa fa-minus-circle sidebar-icon"></i>
                     <span>Checked Out Visitors</span>
                   </a>

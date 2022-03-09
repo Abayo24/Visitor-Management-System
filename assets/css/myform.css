@@ -53,12 +53,7 @@ label{
 
 .sidebar-nav .sidenav .sidebar-item:hover{
     transform: translateY(-5px);
-    background: #2487ce;
-    color: #fff;
-  }
-
-  .sidebar-nav .sidenav .sidebar-item:active{
-    background: #2487ce;
+    text-decoration: underline !important;
     color: #fff;
   }
 

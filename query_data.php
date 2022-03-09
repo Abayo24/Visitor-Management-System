@@ -52,7 +52,7 @@ $user2 = $_SESSION["user"];
 									<i class="fa fa-minus-circle sidebar-icon"></i>
 									<span>Checked Out Visitors</span>
 								</a>
-								<a class="sidebar-item" href="query_data.php">
+								<a class="sidebar-item" href="query_data.php"  style="background: #2487ce;color: #fff;">
 									<i class="fa fa-eye sidebar-icon"></i>
 									<span>View Data</span>
 								</a>
@@ -149,9 +149,7 @@ $user2 = $_SESSION["user"];
 						$dateFP = $_POST['dateF'];
 						$dateP = explode('-', $_POST['dateP']);
 						$dateF = explode('-', $_POST['dateF']);
-						/* Vriables used many times seperatly , 
-	 						 * so can't use arrray now !! 
-	 		                 * future Reminder  */
+				
 						$day_start = $dateP[2];
 						$day_end = $dateF[2];
 						$month_start = $dateP[1];
